@@ -24,7 +24,7 @@ class TesseractPocTest {
                 System.exit(1);
             }
             // Open input image with leptonica library
-            URL imageResource = Thread.currentThread().getContextClassLoader().getResource("test.png");
+            URL imageResource = Thread.currentThread().getContextClassLoader().getResource("plaintext.png");
             String filePath = Objects.requireNonNull(imageResource).getPath();
             image = pixRead(filePath);
             if (image == null) {
